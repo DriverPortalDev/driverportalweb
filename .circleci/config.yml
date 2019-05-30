@@ -15,7 +15,7 @@ jobs:
 
   docs-build-deploy:
     docker:
-      - image: circleci/node:10
+      - image: circleci/node:12
     working_directory: ~/repo
     steps:
       - checkout
@@ -23,16 +23,10 @@ jobs:
           name: Install project
           command: npm install
       - run:
-          name: Build storybook project
-          command: npm run build-storybook
-      - run:
           name: Just random git stuff
           command: |
             git config user.email "ci-build@randomemail.co.za"
             git config user.name "ci-build"
-      - run:
-          name: Deploy storybook files
-          command: node_modules/gh-pages/bin/gh-pages.js --message "ci deployment 2" --dist storybook-static
       - run:
           name: Build angular project
           command: npm run build --prod
