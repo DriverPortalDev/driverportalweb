@@ -24,9 +24,7 @@ jobs:
           command: |
             npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc
             npm install -g --loglevel=warn @angular/cli
-            ng analytics off
-            ng analytics project off
-            npm install
+            npm install --production
       - run:
           name: Just random git stuff
           command: |
