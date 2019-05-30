@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "ngseed"
+  "defaultProject": "ngseed",
+  "cli": {
+    "analytics": false
+  }
 }
