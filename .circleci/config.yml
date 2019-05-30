@@ -21,7 +21,10 @@ jobs:
       - checkout
       - run:
           name: Install project
-          command: npm install
+          command: |
+            npm install -g @angular/cli
+            ng analytics off
+            npm install
       - run:
           name: Just random git stuff
           command: |
