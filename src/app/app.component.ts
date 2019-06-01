@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Driver Portal';
+
+  toggle_status: boolean = false;
+
+  toggleBtn() {
+    this.toggle_status = !this.toggle_status;
+  }
+
+
 }
