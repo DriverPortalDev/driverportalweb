@@ -1,0 +1,7 @@
+.bottom-content {
+  transition: 500ms
+}
+
+.bottom-content > input {
+  transition: 500ms
+}

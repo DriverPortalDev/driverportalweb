@@ -633,6 +633,21 @@ h3 {
   }
 }
 
+.unhide-content {
+  padding-bottom: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 8rem;
+}
+
+input.unhide-input {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  opacity: 1;
+}
+
 .appearance-none {
   -webkit-appearance: none;
      -moz-appearance: none;

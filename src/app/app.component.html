@@ -13,9 +13,9 @@
                 Notified</button>
             </div>
           </div>
-          <div class="bottom-content pb-8 pl-8 pr-8 bg-blue-700" [ngClass]="{'hidden': toggle_status}" >
-            <input
-              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+          <div class="bottom-content bg-blue-700 overflow-hidden h-0" [ngClass]="{'unhide-content': toggle_status}" >
+            <input [ngClass]="{'unhide-input': toggle_status}"
+              class="shadow appearance-none border rounded opacity-0 w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="username" type="text" placeholder="Email">
           </div>
         </div>
