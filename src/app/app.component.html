@@ -14,7 +14,7 @@
             </div>
           </div>
           <div class="bottom-content bg-blue-700 overflow-hidden h-0" [ngClass]="{'unhide-content': toggle_status}" >
-            <input [ngClass]="{'unhide-input': toggle_status}"
+            <input #notifyBox (blur)="afterEnter(notifyBox.value)" [ngClass]="{'unhide-input': toggle_status}"
               class="shadow appearance-none border rounded opacity-0 w-full text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
               id="username" type="text" placeholder="Email">
           </div>
