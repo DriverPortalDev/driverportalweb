@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./homepage.component.css']
 })
 export class HomepageComponent implements OnInit {
-  scrolling: boolean
+  scrolling: boolean = false;
+  scrollingClasses: boolean = false;
 
   constructor() { }
 
@@ -21,10 +22,10 @@ export class HomepageComponent implements OnInit {
   checkScroll() {
     if (typeof window !== undefined) {
       if (window.pageYOffset > 20) {
-        console.log('scrolled!');
         this.scrolling = true;
+        this.scrollingClasses = true;
       } else if (window.pageYOffset < 20 && this.scrolling) {
-        console.log('unscrolled');
+        this.scrollingClasses = false;
       }
     }
   }
