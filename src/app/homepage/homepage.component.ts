@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomepageComponent implements OnInit {
   scrolling: boolean = false;
   scrollingClasses: boolean = false;
+  menuToggle: boolean = true; //keep hidden by default
 
   constructor() { }
 
@@ -17,6 +18,10 @@ export class HomepageComponent implements OnInit {
          this.checkScroll();
       });
     }
+  }
+
+  openMenu(){
+    return this.menuToggle = !this.menuToggle;
   }
 
   checkScroll() {
