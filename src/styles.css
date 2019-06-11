@@ -7572,6 +7572,10 @@ input.unhide-input {
   z-index: auto;
 }
 
+.gradient {
+  background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+}
+
 @media (min-width: 640px) {
   .sm\:appearance-none {
     -webkit-appearance: none;
@@ -14495,6 +14499,10 @@ input.unhide-input {
 
   .sm\:z-auto {
     z-index: auto;
+  }
+
+  .sm\:gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
   }
 }
 
@@ -21422,6 +21430,10 @@ input.unhide-input {
   .md\:z-auto {
     z-index: auto;
   }
+
+  .md\:gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+  }
 }
 
 @media (min-width: 1024px) {
@@ -28348,6 +28360,10 @@ input.unhide-input {
   .lg\:z-auto {
     z-index: auto;
   }
+
+  .lg\:gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
+  }
 }
 
 @media (min-width: 1280px) {
@@ -35273,5 +35289,9 @@ input.unhide-input {
 
   .xl\:z-auto {
     z-index: auto;
+  }
+
+  .xl\:gradient {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%)
   }
 }
